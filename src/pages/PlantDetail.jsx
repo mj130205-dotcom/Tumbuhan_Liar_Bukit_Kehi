@@ -134,11 +134,11 @@ export default function PlantDetail({ plant, onBack }) {
                 <span>Klasifikasi</span>
               </div>
               <div className="bg-gray-50/70 rounded-2xl p-4 border border-gray-100 grid grid-cols-1 sm:grid-cols-2 gap-y-2 gap-x-6 text-sm">
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kingdom</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.kingdom || 'Plantae'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Divisi</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.divisi || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kelas</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.kelas || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Ordo</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.ordo || '-'}</span></div>
-                <div className="flex"><span className="w-24 text-gray-500 font-normal">Famili</span><span className="text-gray-900 font-medium">: {plant.klasifikasi.famili || '-'}</span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kingdom</span><span className="text-gray-900 font-medium">: <span className="taxonomy-value">{plant.klasifikasi.kingdom || 'Plantae'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Divisi</span><span className="text-gray-900 font-medium">: <span className="taxonomy-value">{plant.klasifikasi.divisi || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Kelas</span><span className="text-gray-900 font-medium">: <span className="taxonomy-value">{plant.klasifikasi.kelas || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Ordo</span><span className="text-gray-900 font-medium">: <span className="taxonomy-value">{plant.klasifikasi.ordo || '-'}</span></span></div>
+                <div className="flex"><span className="w-24 text-gray-500 font-normal">Famili</span><span className="text-gray-900 font-medium">: <span className="taxonomy-value">{plant.klasifikasi.famili || '-'}</span></span></div>
               </div>
             </div>
           )}
